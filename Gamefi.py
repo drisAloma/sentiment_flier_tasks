@@ -39,15 +39,12 @@ def open(link):
 
 def OpenProjectLink():
     open('https://gamefi.org/')
-    
     time.sleep(2)
-    
     browser.maximize_window()
     
     find_length = len(browser.find_elements(by = 'xpath', value ='//div[@class = "cursor-pointer"]/img'))
     
     list_count = 0
-    
     while (list_count < find_length):
         global titles, token_info, vesting_schedule, presale_status
         
